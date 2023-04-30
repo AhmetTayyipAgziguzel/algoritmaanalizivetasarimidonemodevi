@@ -3,17 +3,29 @@
 AKIŞ ŞEMASI
 
 1.	Sabitler ve değişkenler tanımlanır.
+    
     •	NUM_LOCATIONS
+    
     •	COORDINATES
+    
     •	PRIORITY_STOCK
+
 2.	main () fonksiyonu başlar.
+
 3.	createAdjacencyMatrix () fonksiyonu çağrılır ve adjacencyMatrix döndürülür.
+
 4.	PRIORITY_STOCK üzerinde döngü başlatılır: a. Öncelik ve stok değerleri alınır. b. determineDistributionAmounts() fonksiyonu çağrılır ve distributionAmounts döndürülür. c. dijkstra() fonksiyonu çağrılır ve distributionOrder döndürülür. d. distributeItems() fonksiyonu çağrılır ve dağıtım işlemi gerçekleştirilir.
+
 5.	createAdjacencyMatrix() fonksiyonu: a. Koordinatlara göre adjacency matrisi oluşturulur. b. Öklidyen mesafe kullanılarak iki nokta arasındaki mesafe hesaplanır. c. Matris döndürülür.
+
 6.	determineDistributionAmounts() fonksiyonu: a. İhtiyaçların miktarını belirlemek için örnek fonksiyon. b. Her lokasyonun eşit miktarda ihtiyacı olduğu varsayılarak miktarlar döndürülür.
+
 7.	dijkstra() fonksiyonu: a. Dijkstra algoritması kullanılarak en kısa yol bulunur. b. En kısa mesafeler ve parent düğümler döndürülür.
+
 8.	createDistributionOrder() fonksiyonu: a. Dijkstra algoritması sonucuna göre dağıtım sırası oluşturulur. b. Dağıtım sırası listesi döndürülür.
+
 9.	distributeItems() fonksiyonu: a. Öğelerin dağıtımı gerçekleştirilir ve kalan stok güncellenir. b. Dağıtım işlemi sırasında her adımda öncelik, lokasyon ve dağıtılan miktar yazdırılır.
+
 10.	main() fonksiyonu sona erer.
 
 
