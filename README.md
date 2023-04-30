@@ -95,14 +95,16 @@ Dijkstra algoritması aşağıdaki adımları izler:
     
     4.	Ziyaret edilmemiş düğümler kümesindeki en düşük ağırlıklı düğümü seçin ve bu düğümü ziyaret edin.
     
-    5.	Şu anki düğümden bağlantılı tüm komşu düğümleri kontrol edin. Eğer yeni ağırlık (şu anki düğümün ağırlığı + kenarın ağırlığı) mevcut ağırlıktan düşükse, bu komşu düğümün ağırlığını yeni ağırlık değeriyle güncelleyin.
+    5.	Şu anki düğümden bağlantılı tüm komşu düğümleri kontrol edin. Eğer yeni ağırlık (şu anki düğümün ağırlığı + kenarın ağırlığı) mevcut ağırlıktan düşükse, 
+    bu komşu düğümün ağırlığını yeni ağırlık değeriyle güncelleyin.
     
     6.	Şu anki düğümü ziyaret edilmiş olarak işaretleyin ve ziyaret edilmemiş düğümler kümesinden çıkarın.
     
     
     7.	Hedef düğüm ziyaret edilene kadar veya ziyaret edilmemiş düğümler kümesi boşalana kadar adımları 4-6'yı tekrarlayın.
     
-    8.	Hedef düğümün ağırlığı, başlangıç düğümünden hedef düğüme kadar olan en kısa yolun uzunluğunu gösterir. Bu yolun kendisini elde etmek için, hedef düğümden başlayarak önceki düğümleri takip edin ve başlangıç düğümüne ulaşana kadar geriye doğru gidin.
+    8.	Hedef düğümün ağırlığı, başlangıç düğümünden hedef düğüme kadar olan en kısa yolun uzunluğunu gösterir. Bu yolun kendisini elde etmek için, 
+    hedef düğümden başlayarak önceki düğümleri takip edin ve başlangıç düğümüne ulaşana kadar geriye doğru gidin.
 
 Dijkstra algoritması, en kısa yol problemlerini çözmek için güvenilir ve etkili bir yöntemdir. Algoritmanın çalışma zamanı, grafın düğüm ve kenar sayısına bağlı olarak O(|V|^2) (V: düğüm sayısı) olabilir; ancak öncelik kuyruğu kullanarak bu süre O(|E|+|V|log|V|) (E: kenar sayısı) olarak optimize edilebilir.
 
